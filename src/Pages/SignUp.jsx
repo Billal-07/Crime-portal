@@ -93,10 +93,10 @@ const SignUp = () => {
                                 <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email' type="email" className='w-[95%] md:w-[73%] py-1 px-2 rounded-md border-2 border-[#309689] outline-none' />
                                 <p className='text-sm mt-3'>Email</p>
                             </div>
-                            <div className='my-3 ml-3'>
+                            {/* <div className='my-3 ml-3'>
                                 <input name="image" onChange={(e) => setImage(e.target.files[0])} type="file" className='w-[95%] md:w-[73%] py-1 px-2 rounded-md border-2 border-[#309689] outline-none' />
                                 <p className='text-sm mt-3'>Profile</p>
-                            </div>
+                            </div> */}
                             <div className='my-3 ml-3'>
                                 <input onChange={(e) => setPassword(e.target.value)} value={password} placeholder='Password' type="password" className='w-[95%] md:w-[73%] py-1 px-2 rounded-md border-2 border-[#309689] outline-none' />
                                 <p className='text-sm mt-3'>Password</p>
