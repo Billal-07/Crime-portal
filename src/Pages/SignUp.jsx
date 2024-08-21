@@ -24,7 +24,7 @@ const SignUp = () => {
         formdata.append('image' , image);
         try {
           e.preventDefault();
-          const res = await axios.post(`https://crime-data.onrender.com/api/auth/register` , formdata , {
+          const res = await axios.post(`http://localhost:5000/api/auth/register` , formdata , {
             headers : {"Content-Type" : "multipart/form-data"}
           });
           console.log(res)

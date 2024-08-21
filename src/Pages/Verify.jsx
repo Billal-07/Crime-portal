@@ -20,7 +20,7 @@ const Verify = () => {
         formdata.append('otp' , otp);
         try {
           e.preventDefault();
-          const res = await axios.post(`https://crime-data.onrender.com/api/auth//verify-otp` , formdata , {
+          const res = await axios.post(`http://localhost:5000/api/auth//verify-otp` , formdata , {
             headers : {"Content-Type" : "application/json"}
           });
           console.log(res)
